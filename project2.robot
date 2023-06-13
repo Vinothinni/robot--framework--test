@@ -7,7 +7,7 @@ Library             XML
 
 *** Variables ***
 ${deposit_btn}      //*[text()="Deposit"]//parent::button
-${userpass}         \#Qaz1234!@@@.
+${userpass}         dummy
 ${dropdown}         //*[@id="dropdown-display"]
 ${real}             //*[@id="real"]
 ${demo}             //*[@id="demo"]
@@ -71,7 +71,7 @@ login
     Wait Until Page Contains Element    dt_login_button    10
     Click Element    dt_login_button
     Wait Until Page Contains Element    txtEmail    10
-    Input Text    txtEmail    vinothinni+7@besquare.com.my
+    Input Text    txtEmail    dummy
     Click Element    //input[@id="txtPass"]
     Input Text    //input[@id="txtPass"]    ${userpass}
     Click Element    //button[@name="login"]
